@@ -12,9 +12,6 @@ public class OrderController {
     @Autowired
     private OrderDao orderDao;
 
-    @Autowired
-    private OrderRepository orderRepository;
-
     @PostMapping("new")
     public void createNewOrder(@RequestBody NewOrderJson json) {
         orderDao.insert(json);

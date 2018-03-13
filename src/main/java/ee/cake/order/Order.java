@@ -1,12 +1,9 @@
 package ee.cake.order;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
 public class Order {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String customerName;
     private BigDecimal price;
